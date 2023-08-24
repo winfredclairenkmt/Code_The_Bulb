@@ -1,0 +1,25 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb Project</title>
+  <link rel="stylesheet" href="bulb.css" />
+</head>
+<body>
+  <div id="bulb">
+    
+  
+    <!-- when the bulbStatus is true, the class 'bulbOn' is activated -->
+    <button v-on:click="toggleBulb">Switch {{ bulbStatus ? 'off' : 'on' }}</button> <br>
+    <!-- :class is activated when the class 'on'(key) is toggled ^line 12 based on the :value bulbStatus (true or false)  -->
+    <div class="bulb" :class="{ 'bulbOn': bulbStatus }">
+    </div>
+
+  </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="bulb.js"></script>
+</body>
+</html>

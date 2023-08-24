@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .tele-container{
+    background-color: black;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgb(75, 75, 75);
+  }
+
+  .inner-container{  
+    position: absolute;
+    width: 560;
+    height: 330px ;
+    top: 10px;
+    right: 20px;
+    left: 20px;
+
+  }
+
+  .tele-program{
+    width: 100%;
+  }
+
+  .tele-control{
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-container{
+    position: absolute;
+    bottom: 16px;
+    right: 109px;
+    width: 50px;
+  }
+  
+  .tele-btn{
+    width: 40px;
+    padding: 5px;
+  }
